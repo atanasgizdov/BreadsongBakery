@@ -1,0 +1,136 @@
+/* ---------------------------------
+   Preloader
+    --------------------------------
+*/
+body {
+    overflow: hidden;
+}
+
+/* Preloader */
+#preloader {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#FFFFFF; /* change if the mask should have another color then white */
+    z-index:9999; /* makes sure it stays on top */
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../images/coffee.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+/* ---------------------------------
+    Home Page video
+    --------------------------------
+*/
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+/* ---------------------------------
+    Home Page container over the video
+    --------------------------------
+*/
+
+html,body{font-family:'Open Sans', sans-serif !important}
+body{position:relative}.homepage-hero-module{border-right:none;border-left:none;position:relative}
+.no-video .video-container video,.touch .video-container video{display:none}.no-video .video-container .poster,.touch .video-container .poster{display:block !important}.video-container{position:relative;bottom:0%;left:0%;height:100%;width:100%;overflow:hidden;background:#000}.video-container .poster img{width:100%;bottom:0;position:absolute}.video-container .filter{z-index:100;position:absolute;background:rgba(0,0,0,0.4);width:100%}.video-container .title-container{z-index:1000;position:absolute;top:35%;width:100%;text-align:center;color:#fff}.video-container .description .inner{font-size:1em;width:45%;margin:0 auto}.video-container .link{position:absolute;bottom:3em;width:100%;text-align:center;z-index:1001;font-size:2em;color:#fff}.video-container .link a{color:#fff}.video-container video{position:absolute;z-index:0;bottom:0}.video-container video.fillWidth{width:100%}.text-white{color:#fff !important}.text-thin{font-weight:100}.video-layout{border-radius:4px;box-shadow:0 0 10px #ccc}.today-video{width:500px !important;height:281px !important}
+
+/* ---------------------------------------------- /*
+ * Typography
+/* ---------------------------------------------- */
+
+#intro h1, #intro h2, #intro h5, #intro h6 {
+	color: #FFF;
+	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size:40px;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    
+}
+
+#intro h3 {
+	color: #FFF;
+	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size:20px;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+#intro h4 {
+	color: #FFF;
+	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size:15px;
+}
+
+/* ---------------------------------------------- /*
+ * Navigation
+/* ---------------------------------------------- */
+
+.navbar {
+	background: none;
+	border-radius: 0;
+	border: 0;
+	text-transform: uppercase;
+	color: #FFF !important;
+	
+}
+
+a:hover {
+    color:#000000 !important;
+    font-weight: 500;
+    
+}
+
+
