@@ -88,12 +88,17 @@ body{position:relative}.homepage-hero-module{border-right:none;border-left:none;
  * Typography
 /* ---------------------------------------------- */
 
+/* Main pages font*/
+.row {
+	 font-family:"Comic Sans MS", cursive, sans-serif
+}
+
 #intro h1, #intro h2, #intro h5, #intro h6 {
 	color: #FFF;
 	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 900;
     text-transform: uppercase;
-    font-size:40px;
+    font-size:60px;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
     
 }
@@ -133,4 +138,25 @@ a:hover {
     
 }
 
+.navbar-color,
+.custom-collapse {
+	background: #FFF;
+	box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+	padding: 0;
+}
 
+/* ---------------------------------------------- /*
+ * Text over images for landing page portfolio demos
+/* ---------------------------------------------- */
+
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+h6 { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+}

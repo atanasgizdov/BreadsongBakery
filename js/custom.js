@@ -26,6 +26,18 @@ $( document ).ready(function() {
     
 });
 
+		var navbar = $('.navbar');
+		var navHeight = navbar.height();
+
+		$(window).scroll(function() {
+			if($(this).scrollTop() >= navHeight) {
+				navbar.addClass('navbar-color');
+			}
+			else {
+				navbar.removeClass('navbar-color');
+			}
+		});
+
 	
 
 function scaleVideoContainer() {
