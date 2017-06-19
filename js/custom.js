@@ -38,7 +38,23 @@ $( document ).ready(function() {
 			}
 		});
 
-	
+
+var classname = document.getElementsByClassName("frontpageimage");
+
+for (var i = 0; i < classname.length; i++) {
+classname[i]("mouseover", imageText, false);
+classname[i]("mouseout", imageTextOff, false);
+}
+
+function imageText() {
+   document.getElementsByClass("frontpageimagetext").setAttribute("style", "display:block;")
+
+}	
+
+function imageTextOff() {
+   
+document.getElementsByClass("frontpageimagetext").setAttribute("style", "display:none;")
+}	
 
 function scaleVideoContainer() {
 
