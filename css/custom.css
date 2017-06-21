@@ -95,7 +95,7 @@ body{position:relative}.homepage-hero-module{border-right:none;border-left:none;
 
 #intro h1, #intro h2, #intro h5, #intro h6 {
 	color: #FFF;
-	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: Genath-Regular, serif;
     font-weight: 900;
     text-transform: uppercase;
     font-size:60px;
@@ -182,7 +182,7 @@ h6 {
     
 }
 
-.col-md-4 h2 { 
+#products { 
    position: absolute; 
    top: 80px; 
    left: 50px; 
